@@ -1,0 +1,4 @@
+Project #2:
+. Need a way to store links
+. Have to figure out a way to "redirect" a user from shortened URL to the original one
+. Have to record a click whenever a use gets redirect
