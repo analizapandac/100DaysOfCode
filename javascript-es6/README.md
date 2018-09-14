@@ -27,3 +27,40 @@ images.forEach((image) => {
     areas.push(image.height * image.width);
 });
 ```
+
+1. **map** 
+
+```
+Implementing `pluck` function.
+
+function pluck(array, property) {
+    return array.map(item => {
+        return item[property];
+    });
+}
+```
+
+1. **filter** - When you need to filter a list of data.:D
+```
+var users = [
+ { id: 1, admin: true },  
+ { id: 2, admin: false },
+ { id: 3, admin: false },
+ { id: 4, admin: false },
+ { id: 5, admin: true },
+];
+
+var filteredUsers = users.filter(user => {
+    return user.admin;
+});
+```
+
+Implementing `reject` function where `iteratorFunction` returns a boolean value.
+
+```
+function reject(array, iteratorFunction) {
+  return array.filter(item => {
+      return !iteratorFunction(item);
+  });
+}
+```
